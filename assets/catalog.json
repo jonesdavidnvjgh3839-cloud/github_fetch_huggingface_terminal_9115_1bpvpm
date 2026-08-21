@@ -25,22 +25,26 @@
       "id": "derived_product_sentiment",
       "name": "Product Sentiment Dataset",
       "type": "derived",
-      "license": "unknown",
+      "license": "cc-by-nc-4.0",
       "upstream_sources": [
         "upstream_review_corpus",
         "upstream_social_feed"
       ],
+      "resolved_license": "cc-by-nc-4.0",
+      "commercial_reuse": false,
       "description": "Cleaned and labeled product review records with sentiment scores."
     },
     {
       "id": "derived_financial_news",
       "name": "Financial News Summaries",
       "type": "derived",
-      "license": "unknown",
+      "license": "cc-by-4.0",
       "upstream_sources": [
         "upstream_news_articles",
         "upstream_review_corpus"
       ],
+      "resolved_license": "cc-by-4.0",
+      "commercial_reuse": true,
       "description": "Abstractive summaries of financial news articles."
     }
   ]
