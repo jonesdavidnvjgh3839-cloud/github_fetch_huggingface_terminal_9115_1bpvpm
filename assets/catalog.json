@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "id": "upstream_review_corpus",
+      "name": "Retail Review Corpus",
+      "type": "upstream",
+      "license": "mit",
+      "description": "Raw product review text collected from public e-commerce listings."
+    },
+    {
+      "id": "upstream_social_feed",
+      "name": "Social Media Feed",
+      "type": "upstream",
+      "license": "cc-by-nc-4.0",
+      "description": "Public social media posts collected for sentiment research."
+    },
+    {
+      "id": "upstream_news_articles",
+      "name": "Financial News Corpus",
+      "type": "upstream",
+      "license": "cc-by-4.0",
+      "description": "Financial news headlines and article bodies."
+    },
+    {
+      "id": "derived_product_sentiment",
+      "name": "Product Sentiment Dataset",
+      "type": "derived",
+      "license": "unknown",
+      "upstream_sources": [
+        "upstream_review_corpus",
+        "upstream_social_feed"
+      ],
+      "description": "Cleaned and labeled product review records with sentiment scores."
+    },
+    {
+      "id": "derived_financial_news",
+      "name": "Financial News Summaries",
+      "type": "derived",
+      "license": "unknown",
+      "upstream_sources": [
+        "upstream_news_articles",
+        "upstream_review_corpus"
+      ],
+      "description": "Abstractive summaries of financial news articles."
+    }
+  ]
+}
